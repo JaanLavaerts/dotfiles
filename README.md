@@ -24,4 +24,4 @@ The included `dotfiles-manager.sh` script helps manage the dotfiles by:
   - `CONFIG_FOLDERS`: Folders from `$HOME/.config`
   - `HOME_DOTFILES`: Files from your home directory
 
-Note: .config becomes config in the repository, and the rest of the files are stored in the root of the repository.
+Note: `.config` becomes `config` in the repository, and the rest of the files are stored in the root of the repository.
