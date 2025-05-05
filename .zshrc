@@ -10,7 +10,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/Users/jaan/go/bin:$PATH"
 
-# vim mode
+# vim mode in commands
 bindkey -v
 
 # aliases
