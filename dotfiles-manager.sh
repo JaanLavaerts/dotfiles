@@ -6,6 +6,7 @@ set -e  # Exit on error
 CONFIG_FOLDERS=(
   "ghostty"
   "aerospace"
+  "karabiner"
 )
 
 # Define dotfiles in home directory (with the leading dot)
