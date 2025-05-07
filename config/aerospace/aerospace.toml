@@ -135,6 +135,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-5 = 'move-node-to-workspace 5'
 
     alt-f = 'fullscreen'
+    alt-v = ['''exec-and-forget aerospace layout floating && osascript -e 'tell application "System Events" to key code 120 using {option down}' || aerospace layout tiling''', 'mode main']
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
