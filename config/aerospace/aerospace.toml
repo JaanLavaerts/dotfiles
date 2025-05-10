@@ -190,3 +190,7 @@ run = "move-node-to-workspace 4"
 if.app-id = 'app.legcord.Legcord'
 run = "move-node-to-workspace 4"
 
+[[on-window-detected]]
+if.app-id = 'com.facebook.archon.developerID'
+run = "move-node-to-workspace 4"
+
