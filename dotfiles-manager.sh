@@ -8,6 +8,7 @@ CONFIG_FOLDERS=(
   "aerospace"
   "karabiner"
   "spotify-player"
+  "kitty"
 )
 
 # Define dotfiles in home directory (with the leading dot)

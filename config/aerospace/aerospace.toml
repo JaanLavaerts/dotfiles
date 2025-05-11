@@ -161,6 +161,8 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
 
+    alt-shift-p = '''exec-and-forget ghostty --title spotify_player -e ~/spot.sh'''
+
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
@@ -192,5 +194,9 @@ run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
 if.app-id = 'com.facebook.archon.developerID'
+run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
+if.window-title-regex-substring = 'spotify'
 run = "move-node-to-workspace 4"
 
