@@ -6,6 +6,22 @@
                 "parameters": { "basic.to_if_held_down_threshold_milliseconds": 150 },
                 "rules": [
                     {
+                      "description": "Remap Mute key to Play/Pause",
+                      "manipulators": [
+                        {
+                          "type": "basic",
+                          "from": {
+                            "consumer_key_code": "mute"
+                          },
+                          "to": [
+                            {
+                              "consumer_key_code": "play_or_pause"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
                         "description": "Home row mods - ctrl, opt, shift, command",
                         "manipulators": [
                             {
