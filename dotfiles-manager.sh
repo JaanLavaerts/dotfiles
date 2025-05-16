@@ -9,6 +9,7 @@ CONFIG_FOLDERS=(
   "karabiner"
   "spotify-player"
   "kitty"
+  "tmux"
 )
 
 # Define dotfiles in home directory (with the leading dot)

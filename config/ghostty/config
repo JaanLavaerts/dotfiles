@@ -49,4 +49,5 @@ macos-titlebar-proxy-icon = hidden
 background-opacity = 0.98
 window-padding-x = 5
 font-size = 14
-font-family = "JetBrains Mono"
+font-thicken = true
+font-thicken-strength = 255
