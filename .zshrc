@@ -25,3 +25,6 @@ alias fzf="fzf --preview="bat {}" | xargs -r nvim"
 alias code="open $1 -a \"Visual Studio Code\""
 alias config="vim $HOME/dotfiles/config/"
 alias t="./dotfiles/config/tmux/start.sh"
+
+# syntax highlighting in zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
