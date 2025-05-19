@@ -12,6 +12,7 @@ export PATH="/Users/jaan/go/bin:$PATH"
 
 # vim mode in commands
 bindkey -v
+export KEYTIMEOUT=1
 
 # aliases
 alias raspi="ssh jaan@192.168.1.56"
@@ -26,5 +27,16 @@ alias code="open $1 -a \"Visual Studio Code\""
 alias config="vim $HOME/dotfiles/config/"
 alias t="./dotfiles/config/tmux/start.sh"
 
+# yazi shell wrapper
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 # syntax highlighting in zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+

@@ -10,6 +10,7 @@ CONFIG_FOLDERS=(
   "spotify-player"
   "kitty"
   "tmux"
+  "yazi"
 )
 
 # Define dotfiles in home directory (with the leading dot)
