@@ -40,3 +40,6 @@ function y() {
 # syntax highlighting in zsh
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# if key repeat gets annoying up the values and execute of these commands:
+#defaults write -g InitialKeyRepeat -int 12
+#defaults write -g KeyRepeat -int 1

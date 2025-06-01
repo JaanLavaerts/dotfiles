@@ -7,7 +7,6 @@
                 "rules": [
                     {
                         "description": "Home row mods - ctrl, opt, shift, command",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
