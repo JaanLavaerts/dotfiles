@@ -1,13 +1,20 @@
 #!/bin/bash
 
-if ! tmux has-session -t default 2>/dev/null; then
+TMUX_BIN="/opt/homebrew/bin/tmux"
+SPOTIFY_PLAYER="/opt/homebrew/bin/spotify_player"
+SESSION_NAME="default"
+SPOTIFY_WINDOW_NAME="spotify"
+DEFAULT_WINDOW_INDEX="zsh"
+
+if ! $TMUX_BIN has-session -t $SESSION_NAME 2>/dev/null; then
     echo "Creating default session..."
-    /opt/homebrew/bin/tmux new-session -d -s default
+    $TMUX_BIN new-session -d -s $SESSION_NAME
 fi
 
-if ! tmux has-session -t spotify 2>/dev/null; then
-    echo "Creating spotify session..."
-    /opt/homebrew/bin/tmux new-session -d -s spotify /opt/homebrew/bin/spotify_player
+if ! $TMUX_BIN list-windows -t $SESSION_NAME | grep -q "^$SPOTIFY_WINDOW_NAME"; then
+    echo "Creating new window for spotify_player..."
+    $TMUX_BIN new-window -t $SESSION_NAME -n $SPOTIFY_WINDOW_NAME "$SPOTIFY_PLAYER"
 fi
 
-/opt/homebrew/bin/tmux attach-session -t default
+$TMUX_BIN select-window -t $SESSION_NAME:$DEFAULT_WINDOW_INDEX
+$TMUX_BIN attach-session -t $SESSION_NAME

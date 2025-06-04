@@ -2,7 +2,8 @@ initial-command = "./dotfiles/config/tmux/start.sh"
 
 # window/ style
 theme = GruvBoxDark
-background-opacity = 0.98
+background-opacity = 0.70
+background-blur = 30
 window-height = 25
 window-width = 100
 window-padding-x = 5
