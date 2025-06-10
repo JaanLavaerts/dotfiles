@@ -127,6 +127,13 @@ automatically-unhide-macos-hidden-apps = false
     alt-4 = 'workspace 4'
     alt-5 = 'workspace 5'
 
+    # sweep kb
+    alt-a = 'workspace 1'
+    alt-r = 'workspace 2'
+    alt-s = 'workspace 3'
+    alt-t = 'workspace 4'
+    alt-g = 'workspace 5'
+
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = 'move-node-to-workspace 1'
     alt-shift-2 = 'move-node-to-workspace 2'
@@ -161,8 +168,6 @@ automatically-unhide-macos-hidden-apps = false
     alt-shift-k = ['join-with up', 'mode main']
     alt-shift-l = ['join-with right', 'mode main']
 
-    alt-shift-p = '''exec-and-forget ghostty --title spotify_player -e ~/spot.sh'''
-
     down = 'volume down'
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
@@ -196,7 +201,7 @@ run = "move-node-to-workspace 4"
 if.app-id = 'com.facebook.archon.developerID'
 run = "move-node-to-workspace 4"
 
-[[on-window-detected]]
-if.window-title-regex-substring = 'spotify'
-run = "move-node-to-workspace 4"
+#[[on-window-detected]]
+#if.window-title-regex-substring = 'spotify'
+#run = "move-node-to-workspace 4"
 
