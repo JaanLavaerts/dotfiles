@@ -1,4 +1,4 @@
-initial-command = "./dotfiles/config/tmux/start.sh"
+#initial-command = "./dotfiles/config/tmux/start.sh"
 
 # window/ style
 theme = GruvBoxDark
