@@ -203,5 +203,5 @@ run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
 if.window-title-regex-substring = 'spotify'
-run = "move-node-to-workspace 4"
+run = "move-node-to-workspace 3"
 
